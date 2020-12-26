@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.myMain">
+   <children>
+      <TextField fx:id="t1" layoutX="178.0" layoutY="116.0" prefHeight="25.0" prefWidth="103.0" />
+      <TextField fx:id="t2" layoutX="178.0" layoutY="152.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="50.0" layoutY="120.0" text="First Number" />
+      <Label layoutX="50.0" layoutY="156.0" text="Second Number" />
+      <Label layoutX="78.0" layoutY="46.0" prefHeight="20.0" prefWidth="200.0" text="  Welcome To My Calculator" textFill="#2e1840" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="b1" layoutX="50.0" layoutY="200.0" mnemonicParsing="false" onAction="#addition" text="Addition" />
+      <Button fx:id="b2" layoutX="43.0" layoutY="246.0" mnemonicParsing="false" onAction="#subtraction" text="Subtraction" />
+      <TextField fx:id="t3" layoutX="163.0" layoutY="200.0" onAction="#addition" />
+      <TextField fx:id="t4" layoutX="163.0" layoutY="246.0" onAction="#subtraction" />
+      <Button fx:id="b3" layoutX="42.0" layoutY="291.0" mnemonicParsing="false" onAction="#Multipication" text="Multipication" />
+      <TextField fx:id="t5" layoutX="163.0" layoutY="291.0" onAction="#Multipication" />
+      <Button fx:id="b4" layoutX="56.0" layoutY="344.0" mnemonicParsing="false" onAction="#Divide" text="Divide" />
+      <TextField fx:id="t6" layoutX="170.0" layoutY="344.0" onAction="#addition" />
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
